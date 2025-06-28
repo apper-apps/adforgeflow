@@ -87,11 +87,11 @@ function App() {
           dispatch(clearUser());
         }
       },
-      onError: function(error) {
+onError: function(error) {
         console.error("Authentication failed:", error);
       }
     });
-  }, []);
+  }, [navigate, dispatch]);
   
   // Authentication methods to share via context
   const authMethods = {
