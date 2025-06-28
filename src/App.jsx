@@ -100,7 +100,7 @@ useEffect(() => {
       });
     } catch (error) {
       console.error("Failed to initialize ApperSDK:", error);
-    }
+}
   }, [navigate, dispatch]);
   
   // Authentication methods to share via context
